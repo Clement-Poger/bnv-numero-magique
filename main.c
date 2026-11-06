@@ -18,11 +18,10 @@ int main(void)
 
     while (nb_to_guess != guess) {
         if (guess >= 1 && guess <= 100) {
-            if (nb_to_guess > guess) {
-                printf("Plus !\n");
-            } else {
-                printf("Moins\n");
-            }
+            int guess_is_too_low = nb_to_guess > guess;
+            const char *keyword = guess_is_too_low ? "Plus " : "Moins";
+
+            printf("C'est %s !\n", keyword);
         } else {
             printf("La valeur n'est pas comprise entre 1 et 100.\n");
         }
