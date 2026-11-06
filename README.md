@@ -26,7 +26,13 @@ Il s'agit d'un dépôt pédagogique.
 - Un compilateur C (GCC, Clang ou un compilateur compatible C11).
 - Un terminal pour lancer le programme. Les couleurs ANSI dependent du terminal utilise.
 
-## Compilation et lancement
+## Installation, Compilation et lancement
+
+Pour commencer, clonez le repository sur votre machine :
+
+```sh
+git clone "https://github.com/Clement-Poger/bnv-numero-magique"
+```
 
 Depuis la racine du depot, compilez le programme principal :
 
