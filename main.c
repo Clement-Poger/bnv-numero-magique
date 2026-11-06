@@ -6,6 +6,7 @@ int main(void)
 {
     int nb_to_guess;
     int guess;
+    int try = 1;
 
     srand(time(NULL));
     nb_to_guess = rand() % 100 + 1;
@@ -28,8 +29,10 @@ int main(void)
 
         printf("Indiquez un nouveau nombre : ");
         scanf("%d", &guess);
+        try++;
     }
 
-    printf("Félicitation ! Vous avez trouvé %d.\n", nb_to_guess);
+    printf("Félicitation ! Vous avez trouvé %d en %d essai(s).\n",
+           nb_to_guess, try);
     return 0;
 }
