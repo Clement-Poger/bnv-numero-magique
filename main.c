@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>      // Pour le Nombre Aléatoire
-#include <math.h>      // Pour pouvoir utiliser les logarithmes
+#include <math.h>      // Pour pouvoir utiliser des logarithmes
+#include <string.h>    // Pour pouvoir répéter des caractères
 #include <stdbool.h>   // Pour pouvoir utiliser des booleens
 
 
